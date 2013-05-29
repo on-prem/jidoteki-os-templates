@@ -40,5 +40,29 @@
         "os_install_type": "preseed"
       }
     ]
+  },
+  "freebsd": {
+    "amd64": [
+      {
+        "os_id": "freebsd-9.1",
+        "os_name": "FreeBSD 9.1-RELEASE",
+        "os_arch": "amd64",
+        "os_iso_source": "ftp://ftp.jp.freebsd.org/pub/FreeBSD/releases/amd64/ISO-IMAGES/9.1/FreeBSD-9.1-RELEASE-amd64-disc1.iso",
+        "os_md5_hash": "f0a320fd52383c42649d48ea545915a9",
+        "os_sha256_hash": "776ba34df5ffb8b5f04b823aacea32210104204b5d3d1547334a22c86cf7090e",
+        "os_install_type": "install_script"
+      }
+    ],
+    "i386": [
+      {
+        "os_id": "freebsd-9.1",
+        "os_name": "FreeBSD 9.1-RELEASE",
+        "os_arch": "i386",
+        "os_iso_source": "ftp://ftp.jp.freebsd.org/pub/FreeBSD/releases/i386/ISO-IMAGES/9.1/FreeBSD-9.1-RELEASE-i386-disc1.iso",
+        "os_md5_hash": "e37d86ce83908bf4b667fdae7298bca5",
+        "os_sha256_hash": "211f9562e0c122598e03aa3fdb38dd8a5c79197a9d09e6ad32f9ee9ba4eb6e0e",
+        "os_install_type": "install_script"
+      }
+    ]
   }
 }
