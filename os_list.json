@@ -1,4 +1,28 @@
 {
+  "centos": {
+    "i386": [
+      {
+        "os_id": "centos-6.4",
+        "os_name": "CentOS 6.4",
+        "os_arch": "i386",
+        "os_iso_source": "http://ftp.jaist.ac.jp/pub/Linux/CentOS/6.4/isos/i386/CentOS-6.4-i386-netinstall.iso",
+        "os_md5_hash": "7cde1479be934ad8463a35f2a3a48a2b",
+        "os_sha256_hash": "1c32d5414559ff54a35b08b1dfb094a5cb0b0586fcb7e2116015f185995dabcc",
+        "os_install_type": "kickstart"
+      }
+    ],
+    "x86_64": [
+      {
+        "os_id": "centos-6.4",
+        "os_name": "CentOS 6.4",
+        "os_arch": "x86_64",
+        "os_iso_source": "http://ftp.jaist.ac.jp/pub/Linux/CentOS/6.4/isos/x86_64/CentOS-6.4-x86_64-netinstall.iso",
+        "os_md5_hash": "bb9af2aea1344597e11070abe6b1fcd3",
+        "os_sha256_hash": "8b3a138e60aaeb172368701637c8b6f7ec39c0cb16978e69caeaff6bc4cfdf1b",
+        "os_install_type": "kickstart"
+      }
+    ]
+  },
   "debian": {
     "amd64": [
       {

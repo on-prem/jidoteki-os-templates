@@ -12,6 +12,7 @@ OS templates are located in the `os_list` directory.
 * Debian 6.0.7 [amd64,i386]
 * Debian 7.0-rc3 [amd64,i386]
 * FreeBSD 9.1 [amd64,i386]
+* CentOS 6.4 [x86_64,i386]
 
 # License
 
