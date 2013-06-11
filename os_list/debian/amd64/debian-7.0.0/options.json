@@ -1,6 +1,6 @@
 {
-  "os_id":"debian-7.0-rc3",
-  "os_name":"Debian 7.0-rc3 Wheezy",
+  "os_id":"debian-7.0.0",
+  "os_name":"Debian 7.0.0 Wheezy",
   "os_arch":"amd64",
   "os_iso_source":"http://ftp.jaist.ac.jp/debian-cd/7.0.0/amd64/iso-cd/debian-7.0.0-amd64-netinst.iso",
   "os_md5_hash":"6a55096340b5b1b7d335d5b559e13ea0",
