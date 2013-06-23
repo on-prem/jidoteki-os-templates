@@ -1,0 +1,9 @@
+{
+  "os_id":"debian-7.1.0",
+  "os_name":"Debian 7.1.0 Wheezy",
+  "os_arch":"i386",
+  "os_iso_source":"http://ftp.jaist.ac.jp/debian-cd/7.1.0/i386/iso-cd/debian-7.1.0-i386-netinst.iso",
+  "os_md5_hash":"a70efb67ca061175eabe7c5dc04ab323",
+  "os_sha256_hash":"c42ed80aec9ee5a3b4f5771a198788054f89eec5012255710cc5271340535c8a",
+  "os_install_type":"preseed"
+}
