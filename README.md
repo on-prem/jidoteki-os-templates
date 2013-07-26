@@ -9,11 +9,23 @@ OS templates are located in the `os_list` directory.
 
 # Available Operating Systems
 
+## Debian
+
 * Debian 7.1.0 [amd64,i386]
 * Debian 6.0.7 [amd64,i386]
 * Debian 7.0.0 [amd64,i386]
+
+## FreeBSD
+
 * FreeBSD 9.1 [amd64,i386]
+
+## CentOS
+
 * CentOS 6.4 [x86_64,i386]
+
+## Windows
+
+* Windows 2008 R2 SERVERSTANDARD [amd64]
 
 # License
 
