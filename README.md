@@ -27,6 +27,10 @@ OS templates are located in the `os_list` directory.
 
 * Windows 2008 R2 SERVERSTANDARD [amd64]
 
+## Jidoteki
+
+* Jidoteki 7.1.0 [amd64]
+
 # License
 
 MIT License, see the [LICENSE](https://github.com/unscramble/jidoteki-os-templates/blob/master/LICENSE) file.
