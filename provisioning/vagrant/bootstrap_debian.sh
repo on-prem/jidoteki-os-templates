@@ -4,7 +4,6 @@
 #
 # Copyright (c) 2013 Alex Williams, Unscramble <license@unscramble.jp>
 
-UNZIP=`which unzip`
 TAR=`which tar`
 
 fail_and_exit() {
@@ -13,8 +12,10 @@ fail_and_exit() {
 }
 
 # Install some dependencies
-apt-get install -y python-dev python-pip unzip && \
+apt-get install -y python-pip unzip && \
 pip install PyYAML Jinja2 || fail_and_exit
+
+UNZIP=`which unzip`
 
 pushd /root
   # Extract ansible and install it
