@@ -13,7 +13,7 @@ fail_and_exit() {
 }
 
 # Install some dependencies
-apt-get install -y python-dev python-pip && \
+apt-get install -y python-dev python-pip unzip && \
 pip install PyYAML Jinja2 || fail_and_exit
 
 pushd /root
