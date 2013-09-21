@@ -31,6 +31,10 @@ pushd /root
     # Run ansible in local mode
     ansible-playbook vagrant.yml -i hosts || fail_and_exit
   popd
+
+  # Cleanup
+  rm -rf v1.3.0.tar.gz ansible-1.3.0 beta-v2.zip jidoteki-os-templates-beta-v2 bootstrap_debian.sh || fail_and_exit
+  history -c
 popd
 
 echo "Provisioning completed successfully"

@@ -36,6 +36,10 @@ cd /root
     chmod 644 hosts && \
     ansible-playbook vagrant.yml -i hosts || fail_and_exit
   cd ..
+
+  # Cleanup
+  rm -rf v1.3.0.tar.gz ansible-1.3.0 beta-v2.zip jidoteki-os-templates-beta-v2 bootstrap_freebsd.sh || fail_and_exit
+  history -c
 cd ..
 
 echo "Provisioning completed successfully"
