@@ -29,6 +29,7 @@ pushd /root
   $UNZIP -o beta-v2.zip || fail_and_exit
   pushd jidoteki-os-templates-beta-v2/provisioning/vagrant
     # Run ansible in local mode
+    chmod 644 hosts && \
     ansible-playbook vagrant.yml -i hosts || fail_and_exit
   popd
 
