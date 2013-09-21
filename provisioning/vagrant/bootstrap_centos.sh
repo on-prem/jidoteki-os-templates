@@ -13,7 +13,7 @@ fail_and_exit() {
 }
 
 # Install some dependencies
-yum install python-jinja2 && \
+yum install -y python-jinja2 && \
 wget http://pyyaml.org/download/pyyaml/PyYAML-3.10.tar.gz && \
 tar -zxvf PyYAML-3.10.tar.gz || fail_and_exit
 pushd PyYAML-3.10
