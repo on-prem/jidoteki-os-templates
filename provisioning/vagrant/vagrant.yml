@@ -1,0 +1,35 @@
+- name: Setup for vagrant boxes
+  hosts: localhost
+  connection: local
+  gather_facts: true
+  tasks:
+    - group_by: key={{ ansible_distribution }}
+    - name: Create vagrant user/group/homedir
+      user: name=vagrant comment="Vagrant User" shell=/bin/sh state=present
+            home=/home/vagrant createhome=yes
+            password="$1$re6ft8gy$PweYoLIPFrEo/y0OeVQyA/"
+
+    - name: Change root password
+      user: name=root password="$1$re6ft8gy$PweYoLIPFrEo/y0OeVQyA/"
+
+    - name: Create vagrant/.ssh directory
+      file: path=/home/vagrant/.ssh owner=vagrant group=vagrant mode=0700
+            state=directory
+
+    - name: Download the insecure public SSH key
+      get_url: url=https://raw.github.com/mitchellh/vagrant/master/keys/vagrant.pub
+               dest=/home/vagrant/.ssh/authorized_keys owner=vagrant group=vagrant
+               mode=0600
+               sha256sum=9aa9292172c915821e29bcbf5ff42d4940f59d6a148153c76ad638f5f4c6cd8b
+
+    - name: Install sudo (FreeBSD only)
+      command: pkg_add -r sudo -F
+      when: ansible_distribution == 'FreeBSD'
+
+    - name: Ensure vagrant user is allowed to sudo
+      lineinfile: dest={{ sudoers_path }} create=yes regexp="vagrant"
+                  line="vagrant ALL=NOPASSWD:ALL" state=present
+
+    - name: Disable SSH DNS resolving
+      lineinfile: dest=/etc/ssh/sshd_config state=present regexp="UseDNS"
+                  line="UseDNS no"

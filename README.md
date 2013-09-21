@@ -31,6 +31,14 @@ OS templates are located in the `os_list` directory.
 
 * Jidoteki 7.1.0 [amd64]
 
+# Provisioning
+
+Provisioning and bootstrap scripts are located in the `provisioning` directory.
+
+## Vagrant
+
+* Create Vagrant .box files using Ansible
+
 # License
 
 MIT License, see the [LICENSE](https://github.com/unscramble/jidoteki-os-templates/blob/master/LICENSE) file.
