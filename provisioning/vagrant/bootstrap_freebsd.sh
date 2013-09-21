@@ -14,8 +14,9 @@ fail_and_exit() {
 
 # Install some dependencies
 pkg_add -r gmake -F && \
-pkg_add -r python -F && \
+pkg_add -r python27 -F && \
 pkg_add -r bash -F && \
+pkg_add -r py27-pip -F && \
 ln -sf /usr/local/bin/python /usr/bin/python && \
 pip install PyYAML Jinja2 || fail_and_exit
 
