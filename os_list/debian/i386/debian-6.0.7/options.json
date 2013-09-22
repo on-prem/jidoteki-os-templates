@@ -1,9 +1,0 @@
-{
-  "os_id":"debian-6.0.7",
-  "os_name":"Debian 6.0.7 Squeeze",
-  "os_arch":"i386",
-  "os_iso_source":"http://caesar.acc.umu.se/cdimage/archive/6.0.7/i386/iso-cd/debian-6.0.7-i386-netinst.iso",
-  "os_md5_hash":"6ebdb31269a3eaaf72fca0ed2f6ba29b",
-  "os_sha256_hash":"26a8c9de527ad59d473e10dffc8883c0dc095cf95ed3439bfdae952276dbc0df",
-  "os_install_type":"preseed"
-}

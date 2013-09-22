@@ -1,9 +1,0 @@
-{
-  "os_id":"debian-6.0.7",
-  "os_name":"Debian 6.0.7 Squeeze",
-  "os_arch":"amd64",
-  "os_iso_source":"http://cdimage.debian.org/cdimage/archive/6.0.7/amd64/iso-cd/debian-6.0.7-amd64-netinst.iso",
-  "os_md5_hash":"cc509122349a27bf1958e1ea0ce4065d",
-  "os_sha256_hash":"28b2070d54b73d24f6d66d4223a0ca5e975e2555478c89ee8b48cbb4b89ee88d",
-  "os_install_type":"preseed"
-}

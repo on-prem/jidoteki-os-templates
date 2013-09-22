@@ -42,15 +42,6 @@
         "os_md5_hash": "6a55096340b5b1b7d335d5b559e13ea0",
         "os_sha256_hash": "a1f8bf08ac01ba44437482b0afa0676839a16a20d7d9f6cb1d8ea0fc2b383ac4",
         "os_install_type": "preseed"
-      },
-      {
-        "os_id": "debian-6.0.7",
-        "os_name": "Debian 6.0.7 Squeeze",
-        "os_arch": "amd64",
-        "os_iso_source": "http://cdimage.debian.org/cdimage/archive/6.0.7/amd64/iso-cd/debian-6.0.7-amd64-netinst.iso",
-        "os_md5_hash": "cc509122349a27bf1958e1ea0ce4065d",
-        "os_sha256_hash": "28b2070d54b73d24f6d66d4223a0ca5e975e2555478c89ee8b48cbb4b89ee88d",
-        "os_install_type": "preseed"
       }
     ],
     "i386": [
@@ -70,15 +61,6 @@
         "os_iso_source": "http://ftp.jaist.ac.jp/debian-cd/7.0.0/i386/iso-cd/debian-7.0.0-i386-netinst.iso",
         "os_md5_hash": "a6b93666a5393334accb7ac4ee28d949",
         "os_sha256_hash": "e41fbf8a1691faba2eba1981f42503027d6793e8e9bb02afcf6836b76dbdbdb6",
-        "os_install_type": "preseed"
-      },
-      {
-        "os_id": "debian-6.0.7",
-        "os_name": "Debian 6.0.7 Squeeze",
-        "os_arch": "i386",
-        "os_iso_source": "http://caesar.acc.umu.se/cdimage/archive/6.0.7/i386/iso-cd/debian-6.0.7-i386-netinst.iso",
-        "os_md5_hash": "6ebdb31269a3eaaf72fca0ed2f6ba29b",
-        "os_sha256_hash": "26a8c9de527ad59d473e10dffc8883c0dc095cf95ed3439bfdae952276dbc0df",
         "os_install_type": "preseed"
       }
     ]
