@@ -13,12 +13,9 @@ fail_and_exit() {
 }
 
 # Install some dependencies
-yum install -y python-jinja2 make && \
-wget http://pyyaml.org/download/pyyaml/PyYAML-3.10.tar.gz && \
-tar -zxvf PyYAML-3.10.tar.gz || fail_and_exit
-pushd PyYAML-3.10
-  python setup.py install || fail_and_exit
-popd
+rpm -Uvh http://download.fedoraproject.org/pub/epel/6/i386/epel-release-6-8.noarch.rpm && \
+yum install -y python-jinja2 python-yaml && \
+rpm -e epel-release-6-8.noarch || fail_and_exit
 
 pushd /root
   # Extract ansible and install it
@@ -38,7 +35,7 @@ pushd /root
   popd
 
   # Cleanup
-  rm -rf PyYAML-3.10.tar.gz v1.3.0.tar.gz ansible-1.3.0 beta-v2.zip jidoteki-os-templates-beta-v2 bootstrap_centos.sh || fail_and_exit
+  rm -rf v1.3.0.tar.gz ansible-1.3.0 beta-v2.zip jidoteki-os-templates-beta-v2 bootstrap_centos.sh || fail_and_exit
   history -c
 popd
 
