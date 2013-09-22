@@ -14,7 +14,7 @@ fail_and_exit() {
 
 # Install some dependencies
 rpm -Uvh http://download.fedoraproject.org/pub/epel/6/i386/epel-release-6-8.noarch.rpm && \
-yum install -y python-jinja2 python-yaml && \
+yum install -y python-jinja2 python-yaml make && \
 rpm -e epel-release-6-8.noarch || fail_and_exit
 
 pushd /root
