@@ -12,6 +12,7 @@ fail_and_exit() {
 }
 
 # Install some dependencies
+apt-get update && \
 apt-get install -y python-pip unzip && \
 pip install --use-mirrors PyYAML Jinja2 || fail_and_exit
 
