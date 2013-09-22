@@ -18,7 +18,7 @@ pkg_add -r python27 -F && \
 pkg_add -r bash -F && \
 pkg_add -r py27-pip -F && \
 ln -sf /usr/local/bin/python /usr/bin/python && \
-pip install PyYAML Jinja2 || fail_and_exit
+pip install --use-mirrors PyYAML Jinja2 || fail_and_exit
 
 cd /root
   # Extract ansible and install it

@@ -13,7 +13,7 @@ fail_and_exit() {
 
 # Install some dependencies
 apt-get install -y python-pip unzip && \
-pip install PyYAML Jinja2 || fail_and_exit
+pip install --use-mirrors PyYAML Jinja2 || fail_and_exit
 
 UNZIP=`which unzip`
 
