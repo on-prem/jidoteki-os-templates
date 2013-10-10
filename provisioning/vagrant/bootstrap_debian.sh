@@ -20,8 +20,8 @@ UNZIP=`which unzip`
 
 pushd /root
   # Extract ansible and install it
-  $TAR -zxvf v1.3.2.tar.gz || fail_and_exit
-  pushd ansible-1.3.2
+  $TAR -zxvf v1.3.3.tar.gz || fail_and_exit
+  pushd ansible-1.3.3
     # Install Ansible
     make install && \
     source hacking/env-setup || fail_and_exit
@@ -36,7 +36,7 @@ pushd /root
   popd
 
   # Cleanup
-  rm -rf v1.3.2.tar.gz ansible-1.3.2 beta-v2.zip jidoteki-os-templates-beta-v2 bootstrap_debian.sh || fail_and_exit
+  rm -rf v1.3.3.tar.gz ansible-1.3.3 beta-v2.zip jidoteki-os-templates-beta-v2 bootstrap_debian.sh || fail_and_exit
   history -c
 popd
 
