@@ -11,6 +11,7 @@ OS templates are located in the `os_list` directory.
 
 ## Debian
 
+* Debian 7.2.0 [amd64,i386]
 * Debian 7.1.0 [amd64,i386]
 * Debian 7.0.0 [amd64,i386]
 
