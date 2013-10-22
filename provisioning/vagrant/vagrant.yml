@@ -5,7 +5,7 @@
   tasks:
     - group_by: key={{ ansible_distribution }}
     - name: Create vagrant user/group/homedir
-      user: name=vagrant comment="Vagrant User" shell=/bin/sh state=present
+      user: name=vagrant comment="Vagrant User" shell={{ vagrant_user_shell }} state=present
             home=/home/vagrant createhome=yes
             password="$1$re6ft8gy$PweYoLIPFrEo/y0OeVQyA/"
 

@@ -1,1 +1,2 @@
 sudoers_path: /usr/local/etc/sudoers.d/vagrant
+vagrant_user_shell: /bin/sh
