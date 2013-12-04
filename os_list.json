@@ -2,6 +2,15 @@
   "centos": {
     "i386": [
       {
+        "os_id": "centos-6.5",
+        "os_name": "CentOS 6.5",
+        "os_arch": "i386",
+        "os_iso_source": "http://ftp.jaist.ac.jp/pub/Linux/CentOS/6.5/isos/i386/CentOS-6.5-i386-netinstall.iso",
+        "os_md5_hash": "427309de36d518db9f72fc14d5d257df",
+        "os_sha256_hash": "c4197c01c77f9c5735e8ac7fcffe0a7f268c0a46fb1ca18e0cf917b7394e4b3c",
+        "os_install_type": "kickstart"
+      },
+      {
         "os_id": "centos-6.4",
         "os_name": "CentOS 6.4",
         "os_arch": "i386",
@@ -12,6 +21,15 @@
       }
     ],
     "x86_64": [
+      {
+        "os_id": "centos-6.5",
+        "os_name": "CentOS 6.5",
+        "os_arch": "x86_64",
+        "os_iso_source": "http://ftp.jaist.ac.jp/pub/Linux/CentOS/6.5/isos/x86_64/CentOS-6.5-x86_64-netinstall.iso",
+        "os_md5_hash": "939fd1d87c11ffe7795324438b85adfb",
+        "os_sha256_hash": "d8aaf698408c0c01843446da4a20b1ac03d27f87aad3b3b7b7f42c6163be83b9",
+        "os_install_type": "kickstart"
+      },
       {
         "os_id": "centos-6.4",
         "os_name": "CentOS 6.4",

@@ -1,0 +1,9 @@
+{
+  "os_id":"centos-6.5",
+  "os_name":"CentOS 6.5",
+  "os_arch":"i386",
+  "os_iso_source":"http://ftp.jaist.ac.jp/pub/Linux/CentOS/6.5/isos/i386/CentOS-6.5-i386-netinstall.iso",
+  "os_md5_hash":"427309de36d518db9f72fc14d5d257df",
+  "os_sha256_hash":"c4197c01c77f9c5735e8ac7fcffe0a7f268c0a46fb1ca18e0cf917b7394e4b3c",
+  "os_install_type":"kickstart"
+}
