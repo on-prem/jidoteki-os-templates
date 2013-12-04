@@ -17,6 +17,7 @@ OS templates are located in the `os_list` directory.
 
 ## FreeBSD
 
+* FreeBSD 9.2 [amd64,i386]
 * FreeBSD 9.1 [amd64,i386]
 
 ## CentOS

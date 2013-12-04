@@ -104,6 +104,15 @@
   "freebsd": {
     "amd64": [
       {
+        "os_id": "freebsd-9.2",
+        "os_name": "FreeBSD 9.2-RELEASE",
+        "os_arch": "amd64",
+        "os_iso_source": "ftp://ftp.jp.freebsd.org/pub/FreeBSD/releases/amd64/ISO-IMAGES/9.2/FreeBSD-9.2-RELEASE-amd64-disc1.iso",
+        "os_md5_hash": "cde180e3c5e3e370c97598a4feccb5b4",
+        "os_sha256_hash": "a8c1751b83646530148766618a89a97009e7500e7057a5cbe3afd74ef480c915",
+        "os_install_type": "install_script"
+      },
+      {
         "os_id": "freebsd-9.1",
         "os_name": "FreeBSD 9.1-RELEASE",
         "os_arch": "amd64",
@@ -114,6 +123,15 @@
       }
     ],
     "i386": [
+      {
+        "os_id": "freebsd-9.2",
+        "os_name": "FreeBSD 9.2-RELEASE",
+        "os_arch": "i386",
+        "os_iso_source": "ftp://ftp.jp.freebsd.org/pub/FreeBSD/releases/i386/ISO-IMAGES/9.2/FreeBSD-9.2-RELEASE-i386-disc1.iso",
+        "os_md5_hash": "ba7ba7943177aee9626df228fb1ee6c2",
+        "os_sha256_hash": "76093c27288f0ab939a5de14b621ec8eb1420d96343132c2b7c382747d35b67c",
+        "os_install_type": "install_script"
+      },
       {
         "os_id": "freebsd-9.1",
         "os_name": "FreeBSD 9.1-RELEASE",

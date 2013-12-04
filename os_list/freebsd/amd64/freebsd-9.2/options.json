@@ -1,0 +1,9 @@
+{
+  "os_id":"freebsd-9.2",
+  "os_name":"FreeBSD 9.2-RELEASE",
+  "os_arch":"amd64",
+  "os_iso_source":"ftp://ftp.jp.freebsd.org/pub/FreeBSD/releases/amd64/ISO-IMAGES/9.2/FreeBSD-9.2-RELEASE-amd64-disc1.iso",
+  "os_md5_hash":"cde180e3c5e3e370c97598a4feccb5b4",
+  "os_sha256_hash":"a8c1751b83646530148766618a89a97009e7500e7057a5cbe3afd74ef480c915",
+  "os_install_type":"install_script"
+}
