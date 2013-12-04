@@ -1,0 +1,9 @@
+{
+  "os_id":"ubuntu-12.04.3",
+  "os_name":"Ubuntu 12.04.3 Precise",
+  "os_arch":"amd64",
+  "os_iso_source":"http://ftp.jaist.ac.jp/pub/Linux/ubuntu-releases/precise/ubuntu-12.04.3-server-amd64.iso",
+  "os_md5_hash":"2cbe868812a871242cdcdd8f2fd6feb9",
+  "os_sha256_hash":"61d5e67c70d97b33c13537461a0b153b41304ef412bb0e9d813bb157068c3c65",
+  "os_install_type":"preseed"
+}

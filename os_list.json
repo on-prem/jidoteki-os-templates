@@ -138,6 +138,30 @@
       }
     ]
   },
+  "ubuntu": {
+    "amd64": [
+      {
+        "os_id": "ubuntu-12.04.3",
+        "os_name": "Ubuntu 12.04.3 Precise",
+        "os_arch": "amd64",
+        "os_iso_source": "http://ftp.jaist.ac.jp/pub/Linux/ubuntu-releases/precise/ubuntu-12.04.3-server-amd64.iso",
+        "os_md5_hash": "2cbe868812a871242cdcdd8f2fd6feb9",
+        "os_sha256_hash": "61d5e67c70d97b33c13537461a0b153b41304ef412bb0e9d813bb157068c3c65",
+        "os_install_type": "preseed"
+      }
+    ],
+    "i386": [
+      {
+        "os_id": "ubuntu-12.04.3",
+        "os_name": "Ubuntu 12.04.3 Precise",
+        "os_arch": "i386",
+        "os_iso_source": "http://ftp.jaist.ac.jp/pub/Linux/ubuntu-releases/precise/ubuntu-12.04.3-server-i386.iso",
+        "os_md5_hash": "e7917ff0543d8248d00ffb166def849e",
+        "os_sha256_hash": "dfc72a13b06cbd2dbd5750a71c62781c8531bbf023920b6dec668d1b066cc540",
+        "os_install_type": "preseed"
+      }
+    ]
+  },
   "windows": {
     "amd64": [
       {

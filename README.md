@@ -32,6 +32,10 @@ OS templates are located in the `os_list` directory.
 
 * Jidoteki 7.1.0 [amd64]
 
+## Ubuntu
+
+* Ubuntu 12.04.3 [amd64,i386]
+
 # Provisioning
 
 Provisioning and bootstrap scripts are located in the `provisioning` directory.
