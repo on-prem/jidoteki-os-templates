@@ -197,18 +197,5 @@
         "os_install_type": "preseed"
       }
     ]
-  },
-  "windows": {
-    "amd64": [
-      {
-        "os_id": "windows-2008-r2-serverstandard",
-        "os_name": "Windows 2008 R2 SERVERSTANDARD",
-        "os_arch": "amd64",
-        "os_iso_source": "http://care.dlservice.microsoft.com//dl/download/7/5/E/75EC4E54-5B02-42D6-8879-D8D3A25FBEF7/7601.17514.101119-1850_x64fre_server_eval_en-us-GRMSXEVAL_EN_DVD.iso",
-        "os_md5_hash": "4263be2cf3c59177c45085c0a7bc6ca5",
-        "os_sha256_hash": "30832ad76ccfa4ce48ccb936edefe02079d42fb1da32201bf9e3a880c8ed6312",
-        "os_install_type": "windows"
-      }
-    ]
   }
 }
