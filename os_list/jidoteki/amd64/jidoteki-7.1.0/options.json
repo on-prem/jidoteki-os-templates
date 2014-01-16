@@ -1,9 +1,0 @@
-{
-  "os_id":"jidoteki-7.1.0",
-  "os_name":"Jidoteki 7.1.0",
-  "os_arch":"amd64",
-  "os_iso_source":"http://ftp.jaist.ac.jp/debian-cd/7.1.0/amd64/iso-cd/debian-7.1.0-amd64-netinst.iso",
-  "os_md5_hash":"80f498a1f9daa76bc911ae13692e4495",
-  "os_sha256_hash":"62232b8adc281c04f9985e4a1541481a468b3b2ca1702a0dd7f62fcf56ef101b",
-  "os_install_type":"preseed"
-}

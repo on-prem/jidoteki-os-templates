@@ -26,10 +26,6 @@ OS templates are located in the `os_list` directory.
 * CentOS 6.5 [x86_64,i386]
 * CentOS 6.4 [x86_64,i386]
 
-## Jidoteki
-
-* Jidoteki 7.1.0 [amd64]
-
 ## Ubuntu
 
 * Ubuntu 12.04.3 [amd64,i386]
