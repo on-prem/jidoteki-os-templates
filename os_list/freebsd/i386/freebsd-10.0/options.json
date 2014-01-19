@@ -1,0 +1,9 @@
+{
+  "os_id":"freebsd-10.0",
+  "os_name":"FreeBSD 10.0-RELEASE",
+  "os_arch":"i386",
+  "os_iso_source":"ftp://ftp.jp.freebsd.org/pub/FreeBSD/releases/ISO-IMAGES/10.0/FreeBSD-10.0-RELEASE-i386-disc1.iso",
+  "os_md5_hash":"9d12797f008f6c180a2a514476c2dede",
+  "os_sha256_hash":"2c09643b3f79c703e424c03408882369025cec655c24a6d81ee073081ee75ebc",
+  "os_install_type":"install_script"
+}
