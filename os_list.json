@@ -44,6 +44,15 @@
   "debian": {
     "amd64": [
       {
+        "os_id": "debian-7.4.0",
+        "os_name": "Debian 7.4.0 Wheezy",
+        "os_arch": "amd64",
+        "os_iso_source": "http://ftp.jaist.ac.jp/debian-cd/7.4.0/amd64/iso-cd/debian-7.4.0-amd64-netinst.iso",
+        "os_md5_hash": "e7e9433973f082a297793c3c5010b2c5",
+        "os_sha256_hash": "b712a141bc60269db217d3b3e456179bd6b181645f90e4aac9c42ed63de492e9",
+        "os_install_type": "preseed"
+      },
+      {
         "os_id": "debian-7.3.0",
         "os_name": "Debian 7.3.0 Wheezy",
         "os_arch": "amd64",
@@ -81,6 +90,15 @@
       }
     ],
     "i386": [
+      {
+        "os_id": "debian-7.4.0",
+        "os_name": "Debian 7.4.0 Wheezy",
+        "os_arch": "i386",
+        "os_iso_source": "http://ftp.jaist.ac.jp/debian-cd/7.4.0/i386/iso-cd/debian-7.4.0-i386-netinst.iso",
+        "os_md5_hash": "7339b668a81b417ac023d73739dc6a03",
+        "os_sha256_hash": "9131246e402177972d0b8dd2068478de3a17644f3e9a9d1fdccef09469cb8052",
+        "os_install_type": "preseed"
+      },
       {
         "os_id": "debian-7.3.0",
         "os_name": "Debian 7.3.0 Wheezy",
