@@ -6,6 +6,7 @@
 # http://unscramble.co.jp
 
 PROVISION_DIR="/tmp/provisioning"
+OS_NAME="default"
 
 provision_failed() {
   echo -e "\e[31m[ENTERPRISE APPLIANCE] Provisioning failed. Cleaning up..\e[0m"
@@ -15,9 +16,56 @@ provision_failed() {
 
 PROVISIONER_VERSION="1.5.4"
 
+manage_updates() {
+  cd $PROVISION_DIR
+
+  if [ -f "updates.key" ]; then
+    mkdir -p /opt/admin/{bin,etc,tmp,log} && \
+    chmod -R 750 /opt/admin && \
+    mv updates.key /opt/admin/etc/ && \
+    chmod 600 /opt/admin/etc/updates.key || provision_failed
+  fi
+}
+
 provisioner_deps() {
+  case "${OS_NAME}" in
+    "centos")
+      provisioner_centos
+      ;;
+    "debian")
+      provisioner_debian
+      ;;
+    "freebsd")
+      provisioner_freebsd
+      ;;
+    "ubuntu")
+      provisioner_ubuntu
+    *)
+      provision_failed
+      ;;
+  esac
+}
+
+provisioner_centos() {
+  rpm -Uvh http://download.fedoraproject.org/pub/epel/6/i386/epel-release-6-8.noarch.rpm && \
+  yum install -y python-jinja2 python-yaml make && \
+  rpm -e epel-release-6-8.noarch || provision_failed
+}
+
+provisioner_debian() {
   apt-get update && \
   apt-get install -y python-yaml python-jinja2 python-httplib2 curl unzip || provision_failed
+}
+
+provisioner_freebsd() {
+  pkg_add -r python27 bash py27-pip libyaml -F && \
+  ln -sf /usr/local/bin/python /usr/bin/python && \
+  pip install --use-mirrors PyYAML Jinja2 || provision_failed
+}
+
+provisioner_ubuntu() {
+  # Same as Debian
+  provisioner_debian
 }
 
 provisioner_install() {
@@ -55,6 +103,7 @@ cleanup() {
 }
 
 # Run all the tasks
+manage_updates
 provisioner_deps
 provisioner_install
 provisioner_setup
