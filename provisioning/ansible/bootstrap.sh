@@ -7,6 +7,7 @@
 
 PROVISION_DIR="/tmp/provisioning"
 OS_NAME="default"
+BASH="/bin/bash"
 
 provision_failed() {
   echo -e "\e[31m[ENTERPRISE APPLIANCE] Provisioning failed. Cleaning up..\e[0m"
@@ -61,6 +62,7 @@ provisioner_freebsd() {
   pkg_add -r python27 bash py27-pip libyaml curl -F && \
   ln -sf /usr/local/bin/python /usr/bin/python && \
   pip install --use-mirrors PyYAML Jinja2 || provision_failed
+  BASH="/usr/local/bin/bash"
 }
 
 provisioner_ubuntu() {
@@ -79,6 +81,7 @@ provisioner_install() {
 provisioner_setup() {
   cd /opt/ansible
 
+  `$BASH`
   source hacking/env-setup -q || provision_failed
 }
 
