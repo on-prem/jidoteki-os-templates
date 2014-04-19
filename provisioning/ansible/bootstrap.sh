@@ -48,7 +48,7 @@ provisioner_deps() {
 
 provisioner_centos() {
   rpm -Uvh http://download.fedoraproject.org/pub/epel/6/i386/epel-release-6-8.noarch.rpm && \
-  yum install -y python-jinja2 python-yaml make && \
+  yum install -y python-jinja2 python-yaml make curl && \
   rpm -e epel-release-6-8.noarch || provision_failed
 }
 
@@ -58,7 +58,7 @@ provisioner_debian() {
 }
 
 provisioner_freebsd() {
-  pkg_add -r python27 bash py27-pip libyaml -F && \
+  pkg_add -r python27 bash py27-pip libyaml curl -F && \
   ln -sf /usr/local/bin/python /usr/bin/python && \
   pip install --use-mirrors PyYAML Jinja2 || provision_failed
 }
