@@ -8,6 +8,7 @@
 PROVISION_DIR="/tmp/provisioning"
 OS_NAME="default"
 BASH="/bin/bash"
+PROVISIONER_FILE="appliance.yml"
 
 provision_failed() {
   echo -e "\e[31m[ENTERPRISE APPLIANCE] Provisioning failed. Cleaning up..\e[0m"
@@ -97,7 +98,9 @@ extract_provision_package() {
 provisioner_run() {
   cd ${PROVISION_DIR}/provision/ansible
 
-  ansible-playbook appliance.yml -i enterprise.inventory -c local || provision_failed
+  awk -F"\- hosts: " '/\- hosts: /{print $2}' $PROVISIONER_FILE > ${PROVISION_DIR}/enterprise.inventory && \
+  export ANSIBLE_HOSTS=${PROVISION_DIR}/enterprise.inventory && \
+  ansible-playbook $PROVISIONER_FILE -c local || provision_failed
 }
 
 cleanup() {
