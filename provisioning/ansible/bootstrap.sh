@@ -41,6 +41,7 @@ provisioner_deps() {
       ;;
     "ubuntu")
       provisioner_ubuntu
+      ;;
     *)
       provision_failed
       ;;
