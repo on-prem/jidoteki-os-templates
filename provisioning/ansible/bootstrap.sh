@@ -18,6 +18,8 @@ provision_failed() {
 
 PROVISIONER_VERSION="1.5.4"
 
+# Jidoteki makes it easy to manage update packages for your customers.
+# The updates.key file will be used to decrypt the update packages.
 manage_updates() {
   cd $PROVISION_DIR
 
