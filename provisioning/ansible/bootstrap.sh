@@ -98,7 +98,7 @@ extract_provision_package() {
 }
 
 provisioner_run() {
-  cd ${PROVISION_DIR}/provision/ansible
+  cd ${PROVISION_DIR}/provision
 
   awk -F"\- hosts: " '/\- hosts: /{print $2}' $PROVISIONER_FILE > ${PROVISION_DIR}/enterprise.inventory && \
   export ANSIBLE_HOSTS=${PROVISION_DIR}/enterprise.inventory && \
