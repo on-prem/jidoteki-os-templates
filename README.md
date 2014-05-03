@@ -31,6 +31,7 @@ OS templates are located in the `os_list` directory.
 
 ## Ubuntu
 
+* Ubuntu 14.04 [amd64, i386]
 * Ubuntu 12.04.3 [amd64,i386]
 
 # Provisioning
