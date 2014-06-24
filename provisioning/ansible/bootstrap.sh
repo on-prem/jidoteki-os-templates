@@ -7,7 +7,6 @@
 
 PROVISION_DIR="/tmp/provisioning"
 OS_NAME="default"
-BASH="/bin/bash"
 PROVISIONER_FILE="appliance.yml"
 
 provision_failed() {
@@ -85,8 +84,7 @@ provisioner_install() {
 provisioner_setup() {
   cd /opt/ansible
 
-  `$BASH`
-  source hacking/env-setup -q || provision_failed
+  . hacking/env-setup -q || provision_failed
 }
 
 extract_provision_package() {
