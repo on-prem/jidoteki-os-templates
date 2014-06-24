@@ -62,10 +62,15 @@ provisioner_debian() {
 }
 
 provisioner_freebsd() {
-  pkg_add -r python27 bash py27-pip libyaml curl -F && \
+  pkg_add -r gmake -F && \
+  pkg_add -r python27 -F && \
+  pkg_add -r bash -F && \
+  pkg_add -r py27-pip -F && \
+  pkg_add -r libyaml -F && \
+  pkg_add -r curl -F && \
   ln -sf /usr/local/bin/python /usr/bin/python && \
   pip install --use-mirrors PyYAML Jinja2 || provision_failed
-  BASH="/usr/local/bin/bash"
+  mkdir -p /opt
 }
 
 provisioner_ubuntu() {
