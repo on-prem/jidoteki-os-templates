@@ -15,7 +15,7 @@ provision_failed() {
   exit 1
 }
 
-PROVISIONER_VERSION="1.5.4"
+PROVISIONER_VERSION="1.5.5"
 
 # Jidoteki makes it easy to manage update packages for your customers.
 # The updates.key file will be used to decrypt the update packages.
@@ -81,15 +81,7 @@ provisioner_ubuntu() {
 provisioner_install() {
   cd $PROVISION_DIR
 
-  curl -s -S -f -L --retry 3 -o ansible-v${PROVISIONER_VERSION}.tar.gz https://github.com/ansible/ansible/archive/v${PROVISIONER_VERSION}.tar.gz || provision_failed
-  tar -zxf ansible-v${PROVISIONER_VERSION}.tar.gz -C /opt || provision_failed
-  rm -f /opt/ansible && ln -s /opt/ansible-${PROVISIONER_VERSION} /opt/ansible || provision_failed
-}
-
-provisioner_setup() {
-  cd /opt/ansible
-
-  . hacking/env-setup -q || provision_failed
+  pip install ansible==${PROVISIONER_VERSION}
 }
 
 extract_provision_package() {
@@ -118,7 +110,6 @@ cleanup() {
 manage_updates
 provisioner_deps
 provisioner_install
-provisioner_setup
 extract_provision_package
 provisioner_run
 cleanup
