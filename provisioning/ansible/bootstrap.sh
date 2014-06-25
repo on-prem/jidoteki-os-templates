@@ -23,7 +23,10 @@ manage_updates() {
   cd $PROVISION_DIR
 
   if [ -f "updates.key" ]; then
-    mkdir -p /opt/admin/{bin,etc,tmp,log} && \
+    mkdir -p /opt/admin/bin && \
+    mkdir -p /opt/admin/etc && \
+    mkdir -p /opt/admin/tmp && \
+    mkdir -p /opt/admin/log && \
     chmod -R 750 /opt/admin && \
     mv updates.key /opt/admin/etc/ && \
     chmod 600 /opt/admin/etc/updates.key || provision_failed
@@ -70,7 +73,6 @@ provisioner_freebsd() {
   pkg_add -r curl -F && \
   ln -sf /usr/local/bin/python /usr/bin/python && \
   pip install --use-mirrors PyYAML Jinja2 || provision_failed
-  mkdir -p /opt
 }
 
 provisioner_ubuntu() {
@@ -79,8 +81,6 @@ provisioner_ubuntu() {
 }
 
 provisioner_install() {
-  cd $PROVISION_DIR
-
   pip install ansible==${PROVISIONER_VERSION}
 }
 
