@@ -55,13 +55,13 @@ provisioner_deps() {
 
 provisioner_centos() {
   rpm -Uvh http://download.fedoraproject.org/pub/epel/6/i386/epel-release-6-8.noarch.rpm && \
-  yum install -y python-jinja2 python-yaml make curl && \
+  yum install -y python-jinja2 python-yaml python-pip make curl && \
   rpm -e epel-release-6-8.noarch || provision_failed
 }
 
 provisioner_debian() {
   apt-get update && \
-  apt-get install -y python-yaml python-jinja2 python-httplib2 curl unzip || provision_failed
+  apt-get install -y python-yaml python-jinja2 python-httplib2 python-pip curl unzip || provision_failed
 }
 
 provisioner_freebsd() {
