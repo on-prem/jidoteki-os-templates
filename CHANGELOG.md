@@ -1,5 +1,9 @@
 # Jidoteki OS Templates ChangeLog
 
+July 2, 2014 v0.2.19
+
+  * Add missing 'encrypt-home' install option in Ubuntu
+
 July 1, 2014 v0.2.18
 
   * Ubuntu preseed scripts use 'ubuntu' as default user instead of root
