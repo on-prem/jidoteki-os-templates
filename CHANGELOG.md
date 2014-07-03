@@ -1,5 +1,11 @@
 # Jidoteki OS Templates ChangeLog
 
+July 3, 2014 v0.2.20
+
+  * Add bootstrap script for Chef
+  * Add OS_CPU variable in bootstrap scripts
+
+
 July 2, 2014 v0.2.19
 
   * Add missing 'encrypt-home' install option in Ubuntu

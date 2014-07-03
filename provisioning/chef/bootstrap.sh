@@ -8,7 +8,7 @@
 PROVISION_DIR="/tmp/provisioning"
 OS_NAME="default"
 OS_CPU="default"
-PROVISIONER_FILE="appliance.yml"
+PROVISIONER_FILE="solo.rb"
 
 provision_failed() {
   echo -e "\e[31m[ENTERPRISE APPLIANCE] Provisioning failed. Cleaning up..\e[0m"
@@ -16,7 +16,7 @@ provision_failed() {
   exit 1
 }
 
-PROVISIONER_VERSION="1.5.5"
+PROVISIONER_VERSION="11.10.4-1"
 
 # Jidoteki makes it easy to manage update packages for your customers.
 # The updates.key file will be used to decrypt the update packages.
@@ -56,24 +56,19 @@ provisioner_deps() {
 
 provisioner_centos() {
   rpm -Uvh http://download.fedoraproject.org/pub/epel/6/i386/epel-release-6-8.noarch.rpm && \
-  yum install -y python-jinja2 python-yaml python-pip make curl && \
+  yum install -y make curl && \
   rpm -e epel-release-6-8.noarch || provision_failed
 }
 
 provisioner_debian() {
   apt-get update && \
-  apt-get install -y python-yaml python-jinja2 python-httplib2 python-pip curl unzip || provision_failed
+  apt-get install -y curl unzip || provision_failed
 }
 
 provisioner_freebsd() {
   pkg_add -r gmake -F && \
-  pkg_add -r python27 -F && \
   pkg_add -r bash -F && \
-  pkg_add -r py27-pip -F && \
-  pkg_add -r libyaml -F && \
-  pkg_add -r curl -F && \
-  ln -sf /usr/local/bin/python /usr/bin/python && \
-  pip install --use-mirrors PyYAML Jinja2 || provision_failed
+  pkg_add -r curl -F || provision_failed
 }
 
 provisioner_ubuntu() {
@@ -82,7 +77,8 @@ provisioner_ubuntu() {
 }
 
 provisioner_install() {
-  pip install ansible==${PROVISIONER_VERSION}
+  curl -L https://opscode-omnibus-packages.s3.amazonaws.com/el/6/${OS_CPU}/chef-${PROVISIONER_VERSION}.el6.${OS_CPU}.rpm -o chef-${PROVISIONER_VERSION}.el6.${OS_CPU}.rpm && \
+  rpm -ivh chef-${PROVISIONER_VERSION}.el6.${OS_CPU}.rpm || provision_failed
 }
 
 extract_provision_package() {
@@ -96,9 +92,7 @@ extract_provision_package() {
 provisioner_run() {
   cd ${PROVISION_DIR}/provision
 
-  awk -F"\- hosts: " '/\- hosts: /{print $2}' $PROVISIONER_FILE > ${PROVISION_DIR}/enterprise.inventory && \
-  export ANSIBLE_HOSTS=${PROVISION_DIR}/enterprise.inventory && \
-  ansible-playbook $PROVISIONER_FILE -c local || provision_failed
+  chef-solo -j solo.json -c solo.rb || provision_failed
 }
 
 cleanup() {
