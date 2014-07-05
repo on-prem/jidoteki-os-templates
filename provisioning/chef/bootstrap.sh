@@ -56,29 +56,28 @@ provisioner_deps() {
 
 provisioner_centos() {
   rpm -Uvh http://download.fedoraproject.org/pub/epel/6/i386/epel-release-6-8.noarch.rpm && \
-  yum install -y make curl && \
+  yum install -y make curl bash && \
   rpm -e epel-release-6-8.noarch || provision_failed
+  (curl -L https://www.opscode.com/chef/install.sh | bash) || provision_failed
 }
 
 provisioner_debian() {
   apt-get update && \
-  apt-get install -y curl unzip || provision_failed
+  apt-get install -y curl unzip bash || provision_failed
+  (curl -L https://www.opscode.com/chef/install.sh | bash) || provision_failed
 }
 
 provisioner_freebsd() {
   pkg_add -r gmake -F && \
   pkg_add -r bash -F && \
   pkg_add -r curl -F || provision_failed
+  (curl -L https://www.opscode.com/chef/install.sh | bash) || provision_failed
 }
 
 provisioner_ubuntu() {
-  # Same as Debian
-  provisioner_debian
-}
-
-provisioner_install() {
-  curl -L https://opscode-omnibus-packages.s3.amazonaws.com/el/6/${OS_CPU}/chef-${PROVISIONER_VERSION}.el6.${OS_CPU}.rpm -o chef-${PROVISIONER_VERSION}.el6.${OS_CPU}.rpm && \
-  rpm -ivh chef-${PROVISIONER_VERSION}.el6.${OS_CPU}.rpm || provision_failed
+  apt-get update && \
+  apt-get install -y curl unzip bash || provision_failed
+  (curl -L https://www.opscode.com/chef/install.sh | sudo bash) || provision_failed
 }
 
 extract_provision_package() {
@@ -104,7 +103,6 @@ cleanup() {
 # Run all the tasks
 manage_updates
 provisioner_deps
-provisioner_install
 extract_provision_package
 provisioner_run
 cleanup

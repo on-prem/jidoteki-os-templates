@@ -1,5 +1,10 @@
 # Jidoteki OS Templates ChangeLog
 
+July 5, 2014 v0.2.21
+
+  * Modify Chef bootstrap script to use generic install method
+  * Add OS_CPU variable in bootstrap scripts
+
 July 3, 2014 v0.2.20
 
   * Add bootstrap script for Chef
