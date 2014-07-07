@@ -1,5 +1,9 @@
 # Jidoteki OS Templates ChangeLog
 
+July 7, 2014 v0.2.23
+
+  * Ubuntu 14.04 shouldn't use 'nomodeset' kernel option
+
 July 7, 2014 v0.2.22
 
   * Ubuntu preseed uses a late_command to fix missing eth0 bug
