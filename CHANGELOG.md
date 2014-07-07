@@ -1,5 +1,9 @@
 # Jidoteki OS Templates ChangeLog
 
+July 7, 2014 v0.2.22
+
+  * Ubuntu preseed uses a late_command to fix missing eth0 bug
+
 July 5, 2014 v0.2.21
 
   * Modify Chef bootstrap script to use generic install method
