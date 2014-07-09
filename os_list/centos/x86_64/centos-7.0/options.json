@@ -5,5 +5,5 @@
   "os_iso_source":"http://ftp.jaist.ac.jp/pub/Linux/CentOS/7.0.1406/isos/x86_64/CentOS-7.0-1406-x86_64-NetInstall.iso",
   "os_md5_hash":"96de4f38a2f07da51831153549c8bd0c",
   "os_sha256_hash":"df6dfdd25ebf443ca3375188d0b4b7f92f4153dc910b17bccc886bd54a7b7c86",
-  "os_install_type":"preseed"
+  "os_install_type":"kickstart"
 }
