@@ -55,9 +55,18 @@ provisioner_deps() {
 }
 
 provisioner_centos() {
-  rpm -Uvh http://download.fedoraproject.org/pub/epel/6/i386/epel-release-6-8.noarch.rpm && \
-  yum install -y make curl bash && \
-  rpm -e epel-release-6-8.noarch || provision_failed
+  # Taken from: http://stackoverflow.com/a/14155303/297080
+  cat <<EOF >/etc/yum.repos.d/epel-bootstrap.repo
+[epelbootstrap]
+name=Bootstrap EPEL
+mirrorlist=http://mirrors.fedoraproject.org/mirrorlist?repo=epel-\$releasever&arch=\$basearch
+failovermethod=priority
+enabled=0
+gpgcheck=0
+EOF
+  yum --enablerepo=epelbootstrap -y install epel-release && \
+  yum --enablerepo=epel install -y python-jinja2 python-yaml python-pip make curl && \
+  rm -f /etc/yum.repos.d/epel-bootstrap.repo || provision_failed
   (curl -L https://www.opscode.com/chef/install.sh | bash) || provision_failed
 }
 

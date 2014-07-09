@@ -1,5 +1,9 @@
 # Jidoteki OS Templates ChangeLog
 
+July 10, 2014 v0.2.25
+
+  * Update Chef and Ansible bootstrap scripts to install on CentOS 7
+
 July 9, 2014 v0.2.24
 
   * Add CentOS 7.0 x86_64
