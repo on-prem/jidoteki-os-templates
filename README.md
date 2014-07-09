@@ -26,6 +26,7 @@ OS templates are located in the `os_list` directory.
 
 ## CentOS
 
+* CentOS 7.0 [x86_64]
 * CentOS 6.5 [x86_64,i386]
 * CentOS 6.4 [x86_64,i386]
 

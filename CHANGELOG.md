@@ -1,5 +1,9 @@
 # Jidoteki OS Templates ChangeLog
 
+July 9, 2014 v0.2.24
+
+  * Add CentOS 7.0 x86_64
+
 July 7, 2014 v0.2.23
 
   * Ubuntu 14.04 shouldn't use 'nomodeset' kernel option
