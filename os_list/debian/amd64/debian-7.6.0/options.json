@@ -1,0 +1,9 @@
+{
+  "os_id":"debian-7.6.0",
+  "os_name":"Debian 7.6.0 Wheezy",
+  "os_arch":"amd64",
+  "os_iso_source":"http://ftp.jaist.ac.jp/debian-cd/7.6.0/amd64/iso-cd/debian-7.6.0-amd64-netinst.iso",
+  "os_md5_hash":"8a3c2ad7fd7a9c4c7e9bcb5cae38c135",
+  "os_sha256_hash":"ab1008f5460c66e4ab601958ffd6df15bc274ffb3d83072830e8b577c699a429",
+  "os_install_type":"preseed"
+}
