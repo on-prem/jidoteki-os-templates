@@ -1,5 +1,9 @@
 # Jidoteki OS Templates ChangeLog
 
+July 15, 2014 v0.2.26
+
+  * Add Debian 7.6.0 amd64 and i386
+
 July 10, 2014 v0.2.25
 
   * Update Chef and Ansible bootstrap scripts to install on CentOS 7
