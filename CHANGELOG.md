@@ -1,5 +1,9 @@
 # Jidoteki OS Templates ChangeLog
 
+July 16, 2014 v0.2.26
+
+  * Add FreeBSD 9.3 amd64, i386
+
 July 10, 2014 v0.2.25
 
   * Update Chef and Ansible bootstrap scripts to install on CentOS 7
