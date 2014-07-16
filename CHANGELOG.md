@@ -1,5 +1,9 @@
 # Jidoteki OS Templates ChangeLog
 
+July 16, 2014 v0.2.27
+
+  * Add FreeBSD 9.3 amd64, i386
+
 July 15, 2014 v0.2.26
 
   * Add Debian 7.6.0 amd64 and i386

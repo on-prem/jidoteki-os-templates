@@ -1,0 +1,9 @@
+{
+  "os_id":"freebsd-9.3",
+  "os_name":"FreeBSD 9.3",
+  "os_arch":"i386",
+  "os_iso_source":"ftp://ftp.freebsd.org/pub/FreeBSD/releases/ISO-IMAGES/9.3/FreeBSD-9.3-RELEASE-i386-disc1.iso",
+  "os_md5_hash":"752fa8cd15f0f1e240042c342a161eb4",
+  "os_sha256_hash":"cab6aad9c3d5ea6a3fb4059f808225c67f1edaea730c555a86a9707ac41ba75d",
+  "os_install_type":"install_script"
+}
