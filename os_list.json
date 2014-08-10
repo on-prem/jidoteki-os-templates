@@ -185,6 +185,15 @@
   "freebsd": {
     "amd64": [
       {
+        "os_id": "freebsd-10.0",
+        "os_name": "FreeBSD 10.0-RELEASE",
+        "os_arch": "amd64",
+        "os_iso_source": "ftp://ftp.jp.freebsd.org/pub/FreeBSD/releases/ISO-IMAGES/10.0/FreeBSD-10.0-RELEASE-amd64-disc1.iso",
+        "os_md5_hash": "fd25619fa0d69c29bea8347b1070ac75",
+        "os_sha256_hash": "9c377b4a4e63443c0b210080694de26133e6a276eddb07c7e00e1c9aebd84109",
+        "os_install_type": "install_script"
+      },
+      {
         "os_id": "freebsd-9.3",
         "os_name": "FreeBSD 9.3",
         "os_arch": "amd64",
@@ -210,18 +219,18 @@
         "os_md5_hash": "f0a320fd52383c42649d48ea545915a9",
         "os_sha256_hash": "776ba34df5ffb8b5f04b823aacea32210104204b5d3d1547334a22c86cf7090e",
         "os_install_type": "install_script"
-      },
-      {
-        "os_id": "freebsd-10.0",
-        "os_name": "FreeBSD 10.0-RELEASE",
-        "os_arch": "amd64",
-        "os_iso_source": "ftp://ftp.jp.freebsd.org/pub/FreeBSD/releases/ISO-IMAGES/10.0/FreeBSD-10.0-RELEASE-amd64-disc1.iso",
-        "os_md5_hash": "fd25619fa0d69c29bea8347b1070ac75",
-        "os_sha256_hash": "9c377b4a4e63443c0b210080694de26133e6a276eddb07c7e00e1c9aebd84109",
-        "os_install_type": "install_script"
       }
     ],
     "i386": [
+      {
+        "os_id": "freebsd-10.0",
+        "os_name": "FreeBSD 10.0-RELEASE",
+        "os_arch": "i386",
+        "os_iso_source": "ftp://ftp.jp.freebsd.org/pub/FreeBSD/releases/ISO-IMAGES/10.0/FreeBSD-10.0-RELEASE-i386-disc1.iso",
+        "os_md5_hash": "9d12797f008f6c180a2a514476c2dede",
+        "os_sha256_hash": "2c09643b3f79c703e424c03408882369025cec655c24a6d81ee073081ee75ebc",
+        "os_install_type": "install_script"
+      },
       {
         "os_id": "freebsd-9.3",
         "os_name": "FreeBSD 9.3",
@@ -247,15 +256,6 @@
         "os_iso_source": "ftp://ftp.jp.freebsd.org/pub/FreeBSD/releases/i386/ISO-IMAGES/9.1/FreeBSD-9.1-RELEASE-i386-disc1.iso",
         "os_md5_hash": "e37d86ce83908bf4b667fdae7298bca5",
         "os_sha256_hash": "211f9562e0c122598e03aa3fdb38dd8a5c79197a9d09e6ad32f9ee9ba4eb6e0e",
-        "os_install_type": "install_script"
-      },
-      {
-        "os_id": "freebsd-10.0",
-        "os_name": "FreeBSD 10.0-RELEASE",
-        "os_arch": "i386",
-        "os_iso_source": "ftp://ftp.jp.freebsd.org/pub/FreeBSD/releases/ISO-IMAGES/10.0/FreeBSD-10.0-RELEASE-i386-disc1.iso",
-        "os_md5_hash": "9d12797f008f6c180a2a514476c2dede",
-        "os_sha256_hash": "2c09643b3f79c703e424c03408882369025cec655c24a6d81ee073081ee75ebc",
         "os_install_type": "install_script"
       }
     ]
