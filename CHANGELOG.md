@@ -1,5 +1,9 @@
 # Jidoteki OS Templates ChangeLog
 
+Augut 10, 2014 v0.2.28
+
+  * Fixed sorting of FreeBSD in os_list.json
+
 July 16, 2014 v0.2.27
 
   * Add FreeBSD 9.3 amd64, i386
