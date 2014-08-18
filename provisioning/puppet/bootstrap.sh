@@ -16,8 +16,6 @@ provision_failed() {
   exit 1
 }
 
-PROVISIONER_VERSION="11.10.4-1"
-
 # Jidoteki makes it easy to manage update packages for your customers.
 # The updates.key file will be used to decrypt the update packages.
 manage_updates() {
