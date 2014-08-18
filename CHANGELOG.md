@@ -1,5 +1,10 @@
 # Jidoteki OS Templates ChangeLog
 
+August 18, 2014, v0.3.0
+
+  * Added working Puppet bootstrap script
+  * Added working Shell bootstrap script
+
 Augut 10, 2014 v0.2.28
 
   * Fixed sorting of FreeBSD in os_list.json
