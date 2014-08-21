@@ -1,5 +1,9 @@
 # Jidoteki OS Templates ChangeLog
 
+August 21, 2014, v0.3.1
+
+  * Remove support for Ubuntu 14.04 temporarily
+
 August 18, 2014, v0.3.0
 
   * Added working Puppet bootstrap script
