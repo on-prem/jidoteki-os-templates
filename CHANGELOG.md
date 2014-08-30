@@ -1,5 +1,9 @@
 # Jidoteki OS Templates ChangeLog
 
+August 30, 2014, v0.3.2
+
+  * Fix Ansible provisioning
+
 August 21, 2014, v0.3.1
 
   * Remove support for Ubuntu 14.04 temporarily
