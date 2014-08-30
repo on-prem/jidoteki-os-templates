@@ -65,13 +65,13 @@ enabled=0
 gpgcheck=0
 EOF
   yum --enablerepo=epelbootstrap -y install epel-release && \
-  yum --enablerepo=epel install -y python-jinja2 python-yaml python-pip make curl && \
+  yum --enablerepo=epel install -y python-jinja2 python-yaml python-pip gcc python-devel make curl && \
   rm -f /etc/yum.repos.d/epel-bootstrap.repo || provision_failed
 }
 
 provisioner_debian() {
   apt-get update && \
-  apt-get install -y python-yaml python-jinja2 python-httplib2 python-pip curl unzip || provision_failed
+  apt-get install -y python-yaml python-jinja2 python-httplib2 python-pip python-dev curl unzip || provision_failed
 }
 
 provisioner_freebsd() {
