@@ -1,5 +1,9 @@
 # Jidoteki OS Templates ChangeLog
 
+September 8, 2014, v0.3.3
+
+  * Remove setup of admin directories from bootstrap scripts
+
 August 30, 2014, v0.3.2
 
   * Fix Ansible provisioning
