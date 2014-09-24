@@ -1,0 +1,9 @@
+{
+  "os_id":"ubuntu-12.04.4",
+  "os_name":"Ubuntu 12.04.4 Precise",
+  "os_arch":"i386",
+  "os_iso_source":"http://ftp.jaist.ac.jp/pub/Linux/ubuntu-releases/precise/ubuntu-12.04.3-server-i386.iso",
+  "os_md5_hash":"0081e57fb8c7e4094fb9767384f087c6",
+  "os_sha256_hash":"fbe7f159337551cc5ce9f0ff72acefef567f3dcd30750425287588c554978501",
+  "os_install_type":"preseed"
+}

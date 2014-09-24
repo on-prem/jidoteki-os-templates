@@ -1,0 +1,9 @@
+{
+  "os_id":"ubuntu-12.04.5",
+  "os_name":"Ubuntu 12.04.5 Precise",
+  "os_arch":"amd64",
+  "os_iso_source":"http://ftp.jaist.ac.jp/pub/Linux/ubuntu-releases/precise/ubuntu-12.04.5-server-amd64.iso",
+  "os_md5_hash":"769474248a3897f4865817446f9a4a53",
+  "os_sha256_hash":"af224223de99e2a730b67d7785b657f549be0d63221188e105445f75fb8305c9",
+  "os_install_type":"preseed"
+}

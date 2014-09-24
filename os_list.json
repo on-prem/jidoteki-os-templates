@@ -195,7 +195,7 @@
       },
       {
         "os_id": "freebsd-9.3",
-        "os_name": "FreeBSD 9.3",
+        "os_name": "FreeBSD 9.3-RELEASE",
         "os_arch": "amd64",
         "os_iso_source": "ftp://ftp.freebsd.org/pub/FreeBSD/releases/ISO-IMAGES/9.3/FreeBSD-9.3-RELEASE-amd64-disc1.iso",
         "os_md5_hash": "1fc7f8bace8dc861258af9042c9918d6",
@@ -233,7 +233,7 @@
       },
       {
         "os_id": "freebsd-9.3",
-        "os_name": "FreeBSD 9.3",
+        "os_name": "FreeBSD 9.3-RELEASE",
         "os_arch": "i386",
         "os_iso_source": "ftp://ftp.freebsd.org/pub/FreeBSD/releases/ISO-IMAGES/9.3/FreeBSD-9.3-RELEASE-i386-disc1.iso",
         "os_md5_hash": "752fa8cd15f0f1e240042c342a161eb4",
@@ -263,6 +263,24 @@
   "ubuntu": {
     "amd64": [
       {
+        "os_id": "ubuntu-12.04.5",
+        "os_name": "Ubuntu 12.04.5 Precise",
+        "os_arch": "amd64",
+        "os_iso_source": "http://ftp.jaist.ac.jp/pub/Linux/ubuntu-releases/precise/ubuntu-12.04.5-server-amd64.iso",
+        "os_md5_hash": "769474248a3897f4865817446f9a4a53",
+        "os_sha256_hash": "af224223de99e2a730b67d7785b657f549be0d63221188e105445f75fb8305c9",
+        "os_install_type": "preseed"
+      },
+      {
+        "os_id": "ubuntu-12.04.4",
+        "os_name": "Ubuntu 12.04.4 Precise",
+        "os_arch": "amd64",
+        "os_iso_source": "http://ftp.jaist.ac.jp/pub/Linux/ubuntu-releases/precise/ubuntu-12.04.4-server-amd64.iso",
+        "os_md5_hash": "e83adb9af4ec0a039e6a5c6e145a34de",
+        "os_sha256_hash": "3aeb42816253355394897ae80d99a9ba56217c0e98e05294b51f0f5b13bceb54",
+        "os_install_type": "preseed"
+      },
+      {
         "os_id": "ubuntu-12.04.3",
         "os_name": "Ubuntu 12.04.3 Precise",
         "os_arch": "amd64",
@@ -273,6 +291,24 @@
       }
     ],
     "i386": [
+      {
+        "os_id": "ubuntu-12.04.5",
+        "os_name": "Ubuntu 12.04.5 Precise",
+        "os_arch": "i386",
+        "os_iso_source": "http://ftp.jaist.ac.jp/pub/Linux/ubuntu-releases/precise/ubuntu-12.04.3-server-i386.iso",
+        "os_md5_hash": "1214cd22448338b60bb24f583dd8741a",
+        "os_sha256_hash": "bec39e79664aa189dea338993f636e54c5eda2f84c27def7b06bd6373ab87628",
+        "os_install_type": "preseed"
+      },
+      {
+        "os_id": "ubuntu-12.04.4",
+        "os_name": "Ubuntu 12.04.4 Precise",
+        "os_arch": "i386",
+        "os_iso_source": "http://ftp.jaist.ac.jp/pub/Linux/ubuntu-releases/precise/ubuntu-12.04.3-server-i386.iso",
+        "os_md5_hash": "0081e57fb8c7e4094fb9767384f087c6",
+        "os_sha256_hash": "fbe7f159337551cc5ce9f0ff72acefef567f3dcd30750425287588c554978501",
+        "os_install_type": "preseed"
+      },
       {
         "os_id": "ubuntu-12.04.3",
         "os_name": "Ubuntu 12.04.3 Precise",

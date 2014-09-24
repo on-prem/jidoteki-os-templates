@@ -1,5 +1,11 @@
 # Jidoteki OS Templates ChangeLog
 
+September 24, 2014, v0.3.4
+
+  * Rename FreeBSD 9.3 to FreeBSD 9.3-RELEASE
+  * Add Ubuntu 12.04.5 amd64 and i386
+  * Add Ubuntu 12.04.4 amd64 and i386
+
 September 8, 2014, v0.3.3
 
   * Remove setup of admin directories from bootstrap scripts
