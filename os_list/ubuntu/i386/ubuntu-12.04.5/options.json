@@ -1,9 +1,0 @@
-{
-  "os_id":"ubuntu-12.04.5",
-  "os_name":"Ubuntu 12.04.5 Precise",
-  "os_arch":"i386",
-  "os_iso_source":"http://ftp.jaist.ac.jp/pub/Linux/ubuntu-releases/precise/ubuntu-12.04.3-server-i386.iso",
-  "os_md5_hash":"1214cd22448338b60bb24f583dd8741a",
-  "os_sha256_hash":"bec39e79664aa189dea338993f636e54c5eda2f84c27def7b06bd6373ab87628",
-  "os_install_type":"preseed"
-}

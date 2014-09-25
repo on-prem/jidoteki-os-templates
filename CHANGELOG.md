@@ -1,5 +1,9 @@
 # Jidoteki OS Templates ChangeLog
 
+September 25, 2014, v0.3.5
+
+  * Removed Ubuntu 12.04.5 until we figure out the mirrors problem
+
 September 24, 2014, v0.3.4
 
   * Rename FreeBSD 9.3 to FreeBSD 9.3-RELEASE
