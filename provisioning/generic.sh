@@ -11,7 +11,6 @@ set -e
 export provision_dir="/tmp/provisioning"
 
 ### Bootstrap Functions ###
-
 provision_failed() {
   >&2 echo "[VIRTUAL APPLIANCE] Provisioning failed. Cleaning up.."
   exit 1
@@ -32,4 +31,3 @@ provisioner_run     || provision_failed
 
 echo "[VIRTUAL APPLIANCE] Provisioning successful"
 exit 0
-

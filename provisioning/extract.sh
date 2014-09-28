@@ -7,4 +7,3 @@ extract_package() {
   umask 027
   $extract_command
 }
-
