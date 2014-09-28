@@ -2,7 +2,7 @@ provisioner_modules="modules/"
 provisioner_file="init.pp"
 
 provisioner_install() {
-  pkg_add -r puppet -F
+  pkg install --accept puppet
 }
 
 provisioner_run() {

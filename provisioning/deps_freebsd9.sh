@@ -8,8 +8,8 @@ provisioner_pkgs=$(cat <<EOF
 EOF)
 
 install_deps() {
-  pkg_add -r pkg2ng && \
-  pkg install -y "$provisioner_pkgs" && \
+  pkg_add -r pkg -F && \
+  pkg install --accept "$provisioner_pkgs" && \
   ln -sf /usr/local/bin/python /usr/bin/python && \
   pip install --use-mirrors PyYAML Jinja2
 }
