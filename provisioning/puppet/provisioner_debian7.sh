@@ -3,7 +3,7 @@ provisioner_file="init.pp"
 provisioner_package="puppetlabs-release-wheezy.deb"
 
 provisioner_install() {
-  cd /tmp
+  cd "$provision_dir"
 
   curl -o "${provisioner_package}" "https://apt.puppetlabs.com/${provisioner_package}" && \
   dpkg -i "${provisioner_package}" && \

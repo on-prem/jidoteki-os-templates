@@ -5,5 +5,5 @@ provisioner_install() {
 }
 
 provisioner_run() {
-  $(${provision_command})
+  $provision_command
 }
