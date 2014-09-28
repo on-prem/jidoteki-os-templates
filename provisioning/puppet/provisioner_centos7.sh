@@ -9,5 +9,5 @@ provisioner_install() {
 provisioner_run() {
   cd "${provision_dir}/provision"
 
-  puppet apply --modulepath="${provisioner_modules}" "${provisioner_file}" || provision_failed
+  puppet apply --modulepath="${provisioner_modules}" "${provisioner_file}"
 }

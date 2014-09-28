@@ -5,10 +5,11 @@ provisioner_pkgs=$(cat <<EOF
   gmake
   unzip
   curl
-EOF)
+EOF
+)
 
 install_deps() {
-  pkg install -y "$provisioner_pkgs" && \
+  pkg install -y $provisioner_pkgs && \
   ln -sf /usr/local/bin/python /usr/bin/python && \
   pip install --use-mirrors PyYAML Jinja2
 }

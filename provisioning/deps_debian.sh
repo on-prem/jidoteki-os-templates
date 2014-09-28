@@ -6,9 +6,10 @@ provisioner_pkgs=$(cat <<EOF
   python-dev
   curl
   unzip
-EOF)
+EOF
+)
 
 install_deps() {
   apt-get update && \
-  apt-get install -y "$provisioner_pkgs"
+  apt-get install -y $provisioner_pkgs
 }

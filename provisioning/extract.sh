@@ -5,6 +5,6 @@ extract_package() {
 
   mkdir -p provision
   umask 027
-  $(${extract_command})
+  $extract_command
 }
 

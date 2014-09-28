@@ -8,11 +8,11 @@ provisioner_install() {
   curl -o "${provisioner_package}" "https://apt.puppetlabs.com/${provisioner_package}" && \
   dpkg -i "${provisioner_package}" && \
   apt-get update && \
-  apt-get install puppet
+  apt-get install -y puppet
 }
 
 provisioner_run() {
   cd "${provision_dir}/provision"
 
-  puppet apply --modulepath="${provisioner_modules}" "${provisioner_file}" || provision_failed
+  puppet apply --modulepath="${provisioner_modules}" "${provisioner_file}"
 }

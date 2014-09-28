@@ -6,7 +6,8 @@ provisioner_pkgs=$(cat <<EOF
   gcc
   make
   curl
-EOF)
+EOF
+)
 
 install_deps() {
   # Taken from: http://stackoverflow.com/a/14155303/297080
@@ -19,5 +20,5 @@ enabled=0
 gpgcheck=1
 EOF
   yum --enablerepo=epelbootstrap -y install epel-release && \
-  yum --enablerepo=epel install -y "$provisioner_pkgs"
+  yum --enablerepo=epel install -y $provisioner_pkgs
 }
