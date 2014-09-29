@@ -5,5 +5,7 @@ provisioner_install() {
 }
 
 provisioner_run() {
+  cd "${provision_dir}/provision"
+
   $provision_command
 }
