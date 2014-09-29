@@ -1,5 +1,5 @@
 provisioner_file="appliance.yml"
-provisioner_version="1.6.10"
+provisioner_version="1.5.5"
 
 provisioner_install() {
   pip install ansible=="${provisioner_version}"
