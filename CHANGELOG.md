@@ -1,5 +1,9 @@
 # Jidoteki OS Templates ChangeLog
 
+October 2, 2014, v0.4.0
+
+  * Modified bootstrap scripts to be POSIX-compliant
+
 September 25, 2014, v0.3.5
 
   * Removed Ubuntu 12.04.5 until we figure out the mirrors problem
