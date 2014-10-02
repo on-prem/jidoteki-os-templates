@@ -10,6 +10,8 @@ EOF
 )
 
 install_deps() {
+  export DEBIAN_FRONTEND=noninteractive
+
   apt-get update && \
   apt-get install -y $provisioner_pkgs
 }
