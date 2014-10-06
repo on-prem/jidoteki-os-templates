@@ -1,5 +1,9 @@
 # Jidoteki OS Templates ChangeLog
 
+October 6, 2014, v0.4.1
+
+  * Add default placeholder 'deps.sh' script which doesn't do anything
+
 October 2, 2014, v0.4.0
 
   * Modified bootstrap scripts to be POSIX-compliant
