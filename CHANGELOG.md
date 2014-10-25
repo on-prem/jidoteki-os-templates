@@ -1,5 +1,9 @@
 # Jidoteki OS Templates ChangeLog
 
+October 25, 2014, v0.4.2
+
+  * Remove the CentOS hack to install epel-release
+
 October 6, 2014, v0.4.1
 
   * Add default placeholder 'deps.sh' script which doesn't do anything
