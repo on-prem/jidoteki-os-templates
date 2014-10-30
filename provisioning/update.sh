@@ -6,17 +6,14 @@
 # http://unscramble.co.jp
 
 echo "Updating the server.."
-echo ""
-sleep 1
-echo "Installing packages.."
-echo ""
-sleep 2
-echo "Updating app.."
-echo ""
-sleep 1
-echo "Restarting services.."
-echo ""
-sleep 2
+
+set -u
+set -e
+
+### Update Functions ###
+
+trap 'exit 127' INT
+
 echo 'All done!'
 
 exit 0
