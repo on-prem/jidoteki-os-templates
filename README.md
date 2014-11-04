@@ -11,6 +11,7 @@ OS templates are located in the `os_list` directory.
 
 ## Debian
 
+* Debian 7.7.0 [amd64,i386]
 * Debian 7.6.0 [amd64,i386]
 * Debian 7.5.0 [amd64,i386]
 * Debian 7.4.0 [amd64,i386]
@@ -29,11 +30,13 @@ OS templates are located in the `os_list` directory.
 ## CentOS
 
 * CentOS 7.0 [x86_64]
+* CentOS 6.6 [x86_64,i386]
 * CentOS 6.5 [x86_64,i386]
 * CentOS 6.4 [x86_64,i386]
 
 ## Ubuntu
 
+* Ubuntu 14.04.1 [amd64,i386]
 * Ubuntu 12.04.4 [amd64,i386]
 * Ubuntu 12.04.3 [amd64,i386]
 

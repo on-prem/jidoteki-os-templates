@@ -1,5 +1,11 @@
 # Jidoteki OS Templates ChangeLog
 
+October 30, 2014 v0.4.3
+
+  * Add Debian 7.7.0 amd64 and i386
+  * Add CentOS 6.6 x86_64 and i386
+  * Add Ubuntu 14.04.1 amd64 and i386
+
 October 25, 2014, v0.4.2
 
   * Remove the CentOS hack to install epel-release

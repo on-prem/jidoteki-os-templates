@@ -1,0 +1,9 @@
+{
+  "os_id":"centos-6.6",
+  "os_name":"CentOS 6.6",
+  "os_arch":"x86_64",
+  "os_iso_source":"http://ftp.jaist.ac.jp/pub/Linux/CentOS/6.6/isos/x86_64/CentOS-6.6-x86_64-netinstall.iso",
+  "os_md5_hash":"2342bc5ea72fc028972aa0f21cee28b4",
+  "os_sha256_hash":"ad8f6de098503174c7609d172679fa0dd276f4b669708933d9c4927bd3fe1017",
+  "os_install_type":"kickstart"
+}
