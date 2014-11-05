@@ -299,6 +299,15 @@
   "ubuntu": {
     "amd64": [
       {
+        "os_id": "ubuntu-14.04.1",
+        "os_name": "Ubuntu 14.04.1 Trusty",
+        "os_arch": "amd64",
+        "os_iso_source": "http://ftp.jaist.ac.jp/pub/Linux/ubuntu-releases/trusty/ubuntu-14.04.1-server-amd64.iso",
+        "os_md5_hash": "ca2531b8cd79ea5b778ede3a524779b9",
+        "os_sha256_hash": "946a6077af6f5f95a51f82fdc44051c7aa19f9cfc5f737954845a6050543d7c2",
+        "os_install_type": "preseed"
+      },
+      {
         "os_id": "ubuntu-12.04.4",
         "os_name": "Ubuntu 12.04.4 Precise",
         "os_arch": "amd64",
@@ -318,6 +327,15 @@
       }
     ],
     "i386": [
+      {
+        "os_id": "ubuntu-14.04.1",
+        "os_name": "Ubuntu 14.04.1 Trusty",
+        "os_arch": "i386",
+        "os_iso_source": "http://ftp.jaist.ac.jp/pub/Linux/ubuntu-releases/trusty/ubuntu-14.04.1-server-i386.iso",
+        "os_md5_hash": "3aa14ca13d52df070870d39306f4a4eb",
+        "os_sha256_hash": "976044842804eafc18390505508958b559c131211160ecae5e60694bdf171f78",
+        "os_install_type": "preseed"
+      },
       {
         "os_id": "ubuntu-12.04.4",
         "os_name": "Ubuntu 12.04.4 Precise",
