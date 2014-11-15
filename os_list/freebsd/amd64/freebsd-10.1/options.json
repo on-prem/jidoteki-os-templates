@@ -1,0 +1,9 @@
+{
+  "os_id":"freebsd-10.1",
+  "os_name":"FreeBSD 10.1-RELEASE",
+  "os_arch":"amd64",
+  "os_iso_source":"ftp://ftp3.jp.freebsd.org/pub/FreeBSD/releases/ISO-IMAGES/10.1/FreeBSD-10.1-RELEASE-amd64-disc1.iso",
+  "os_md5_hash":"d0d4553080b88653569e1871d57fc819",
+  "os_sha256_hash":"0c3d64ce48c3ef761761d0fea07e1935e296f8c045c249118bc91a7faf053a6b",
+  "os_install_type":"install_script"
+}

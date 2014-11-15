@@ -1,0 +1,9 @@
+{
+  "os_id":"debian-7.7.0",
+  "os_name":"Debian 7.7.0 Wheezy",
+  "os_arch":"amd64",
+  "os_iso_source":"http://ftp.jaist.ac.jp/debian-cd/7.7.0/amd64/iso-cd/debian-7.7.0-amd64-netinst.iso",
+  "os_md5_hash":"0b31bccccb048d20b551f70830bb7ad0",
+  "os_sha256_hash":"d440e85b4121f94608748139f25dbce1ad36771348b002fe07d4d44b9d9e623f",
+  "os_install_type":"preseed"
+}
