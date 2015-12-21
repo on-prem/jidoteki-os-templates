@@ -3,6 +3,10 @@ jidoteki-os-templates
 
 Official Jidoteki OS templates
 
+# WARNING: DEPRECATED
+
+Since [Jidoteki](https://jidoteki.com) now supports [Custom OS installations](http://blog.unscramble.co.jp/post/99370686563/importing-veewee-and-packer-configs) (a.k.a. almost any OS), we've decided to stop supporting specific systems. These templates will remain accessible as examples, but won't receive any updates.
+
 # Templates
 
 OS templates are located in the `os_list` directory.
